@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Assignment 3</title>
+  </head>
+  <body class="body">
+    <header>
+      <h3 class="title">Alert Box Page</h3>
+    </header>
+    <nav>
+      <ul class="nav_list">
+        <li><a href="#" class="nav nav_alert">Alert Box</a></li>
+        <li><a href="#" class="nav nav_todo">Todo</a></li>
+        <li><a href="#" class="nav nav_form">Form</a></li>
+      </ul>
+    </nav>
+    <main>
+      <!-- alert box section -->
+      <section class="display alert-box hidden">
+        <button class="alert-box_btn">Open dialog</button>
+        <div class="alert-box_text hidden">
+          <h3>Payment successful</h3>
+          <p>
+            Your payment has been successful submitted. We've sent you an email
+            with all of details of your order.
+          </p>
+          <button class="alert-box_text-btn">Got it, thanks!</button>
+        </div>
+      </section>
+
+
+      <!-- todo list section -->
+      <section class="display todo hidden">
+        
+          <form class="todo_container" action="#">
+            <h3>Todo App</h3>
+            <input type="text" placeholder="Search Todo" class="search" autofocus />
+            <ul class="todos">
+                  
+            </ul>
+           
+            <input type="text" placeholder="Enter new todo" autocomplete="off" class="add_todo" />
+            <button class="todo_btn" type="submit">Add Todo</button>
+          </form>
+          
+      </section>
+
+      <!-- form section -->
+      <section class="display form hidden">
+      
+        <form class="myForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="off">
+          <p class="name-error"></p><br>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="off">
+          <p class="email-error"></p><br>
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <p class="password-error"></p><br>
+
+          <button type="submit" class="form-btn">Login</button>
+      </form>
+   
+  </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
